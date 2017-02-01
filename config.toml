@@ -1,0 +1,10 @@
+baseurl = "https://impractical.co"
+pygmentsuseclasses = true
+title = "Impractical Labs"
+
+[params]
+description = "We can do better."
+logo = "logo.svg"
+
+[permalinks]
+post = "/:title"

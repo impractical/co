@@ -1,0 +1,100 @@
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+  font-size: 1.25em;
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.4em;
+  color: rgb(95, 88, 79);
+	height: 100%;
+	width: 100%;
+}
+
+blockquote {
+  font-size: 1.5em;
+  line-height: 1.25em;
+  font-weight: 400;
+}
+
+a {
+	color: rgb(93, 91, 81);
+  text-decoration: underline;
+}
+
+a:hover, a:visited {
+  color: rgb(200, 78, 31);
+}
+
+strong {
+  font-weight: 400;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 700;
+	font-family: "flexoheavy";
+}
+
+h1 a, h2 a, h3 a, h4 a {
+	text-decoration: none;
+}
+
+.centered-container {
+	display: flex;
+  justify-content: center;
+  align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+.centered-inner {
+	margin-bottom: 10rem;
+}
+
+.site-header .logo, .centered-container .logo {
+  display: block;
+  margin: 0 auto;
+  height: 4em;
+}
+
+.site-header .site-title, .centered-container .site-title {
+  text-align: center;
+  margin: .5em 0 0;
+  line-height: 1.2em;
+	text-transform: uppercase;
+}
+
+.site-header .site-description, .centered-container .site-description {
+  text-align: center;
+  margin: 0 0 1em;
+	font-weight: 500;
+}
+
+.site-header {
+  margin-top: 2.5em;
+}
+
+.site-footer {
+  font-size: .8em;
+  text-align: center;
+  font-weight: 400;
+}
+
+.entry-title {
+  margin-top: 1em;
+  margin-bottom: 0em;
+  font-weight: 300;
+}
+
+.entry-meta {
+  margin-top: .25em;
+  font-size: .8em;
+}
+
+.entry-content {
+  margin: 2.5em auto;
+  width: 90%;
+  max-width: 40em;
+}

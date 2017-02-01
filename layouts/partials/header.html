@@ -1,0 +1,8 @@
+{{ partial "head.html" . }}
+
+	<body>
+		<header class="site-header">
+			<a href="{{ "/" | relURL }}" title="{{ .Site.Title }}"><img class="logo" src="/images/{{ .Site.Params.logo }}" /></a>
+			<h1 class="site-title">{{ .Site.Title }}</h1>
+			<p class="site-description">{{ .Site.Params.description }}</p>
+		</header>

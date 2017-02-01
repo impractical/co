@@ -1,0 +1,18 @@
+impractical.engineering {
+  gzip
+  log / stdout "{when} [{remote}] {method} {scheme} {host} {uri} --> {status} {latency} {size}"
+  root /srv/public
+  git github.com/impractical/engineering {
+    path ../
+    then hugo
+    hook /webhook
+  }
+  tls paddy@impractical.co
+  errors {
+    404 404.html
+  }
+}
+
+www.impractical.engineering {
+  redir https://impractical.engineering{uri}
+}
