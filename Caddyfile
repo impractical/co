@@ -1,8 +1,7 @@
-impractical.engineering {
+impractical.co {
   gzip
   log / stdout "{when} [{remote}] {method} {scheme} {host} {uri} --> {status} {latency} {size}"
-  root /srv/public
-  git github.com/impractical/engineering {
+  git github.com/impractical/co {
     path ../
     then hugo
     hook /webhook
@@ -13,6 +12,6 @@ impractical.engineering {
   }
 }
 
-www.impractical.engineering {
-  redir https://impractical.engineering{uri}
+www.impractical.co {
+  redir https://impractical.co{uri}
 }
