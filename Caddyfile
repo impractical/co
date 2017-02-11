@@ -1,9 +1,10 @@
 impractical.co {
   gzip
   log / stdout "{when} [{remote}] {method} {scheme} {host} {uri} --> {status} {latency} {size}"
+  root /home/paddy/impractical.co/public
   git github.com/impractical/co {
     path ../
-    then hugo
+    then /home/paddy/hugo
     hook /webhook
   }
   tls paddy@impractical.co
