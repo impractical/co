@@ -39,6 +39,6 @@
 		<meta property="og:url" content="{{ .URL | absURL }}"/>
 		<meta property="og:image" content="{{ print .Site.BaseURL "/images/" .Site.Params.logo }}"/>
 		<meta property="og:site_name" content="{{ .Site.Title }}">{{ if .Params.repo }}
-    <meta name="go-import" content="{{ replaceRE "https?://(.*)" "$1" .Site.BaseURL }}/{{ .Params.repo }} git https://github.com/impractical/{{ .Params.repo }}">
-    <meta name="go-source" content="{{ replaceRE "https?://(.*)" "$1" .Site.BaseURL }}/{{ .Params.repo }} https://github.com/impractical/{{ .Params.repo }}/ https://github.com/impractical/{{ .Params.repo }}/tree/master{/dir} https://github.com/impractical/{{ .Params.repo }}/blob/master{/dir}/{file}#L{line}">{{ end }}
+    <meta name="go-import" content="{{ replaceRE "https?://(.*)" "$1" .Site.BaseURL }}{{ .URL }} git https://github.com/impractical/{{ .Params.repo }}">
+    <meta name="go-source" content="{{ replaceRE "https?://(.*)" "$1" .Site.BaseURL }}{{ .URL }} https://github.com/impractical/{{ .Params.repo }}/ https://github.com/impractical/{{ .Params.repo }}/tree/master{/dir} https://github.com/impractical/{{ .Params.repo }}/blob/master{/dir}/{file}#L{line}">{{ end }}
 	</head>
