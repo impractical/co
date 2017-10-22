@@ -1,8 +1,9 @@
 +++
-repo = "{{ index (split .TranslationBaseName "/") 0 }}"
+repo = "{{ .TranslationBaseName }}"
 title = "{{ .TranslationBaseName }}"
 date = {{ .Date }}
-draft = true
+draft = false
+url = "/{{ .TranslationBaseName }}"
 +++
 
-[View the code on GitHub](https://github.com/impractical/{{ index (split .TranslationBaseName "/") 0 }})
+[View the code on GitHub](https://github.com/impractical/{{ .TranslationBaseName }})
